@@ -10,4 +10,6 @@
   * check MQTT connection
     * not connected? connect
   * publish measurement to MQTT
+
+## Serial output
 ![Test Image 7](https://i.imgur.com/ht9y0QM.png)
