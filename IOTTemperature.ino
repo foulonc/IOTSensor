@@ -19,8 +19,6 @@ void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
   Serial.begin(9600);
   dht.begin();
-  connectWifi();                                  // Connect WIFI
-  connectMQTT();                                  // Connect MQTT
 }
 void loop() {
 //////////////////////////////////////////////////Loop////////////////////////////////////////////////
@@ -80,7 +78,7 @@ void connectWifi(){                         // attempt to connect to Wifi networ
     Serial.print("Wifi not connected: attempting to connect to SSID: ");
     Serial.println(ssid);
     status = WiFi.begin(ssid, pass);
-    delay(15000);                           // wait 10 seconds for connection:
+    delay(20000);                           // wait 10 seconds for connection:
   }
   Serial.println("Connected to wifi");
   printWifiStatus();
