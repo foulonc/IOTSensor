@@ -1,5 +1,6 @@
 # IOTSensor
 ## Logic
+
 * Initialize libraries
 * Initialize variables (import secrets from secrets.h)
 * set Error led on before first wifi connection
